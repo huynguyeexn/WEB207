@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 py-2">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Giá KM</th>
+            <th scope="col">Ngày cập nhật</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products | async">
+            <th scope="row">{{ product.id }}</th>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.newPrice }}</td>
+            <td>{{ product.created_at | date }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-12">
+      <a routerLink="/admin/product/add" class="btn btn-primary"
+        >Thêm sản phẩm</a
+      >
+    </div>
+  </div>
+</div>

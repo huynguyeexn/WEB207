@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "web207-f88db": {
+      "hosting": {
+        "web207-assignment": [
+          "web207-f88db"
+        ]
+      }
+    }
+  }
+}

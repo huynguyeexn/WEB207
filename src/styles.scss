@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+$theme-colors: (
+  "primary": #8965e0,
+);
+
+$border-radius: 0.5rem !default;
+$border-radius-lg: 1rem !default;
+$border-radius-sm: 1.5rem !default;
+
+.hover {
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+#theme-mode-switch {
+  display: flex;
+  align-items: center;
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  label {
+    margin: 0;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 2rem;
+    height: 1rem;
+    background: #b6b6b6;
+    display: block;
+    border-radius: 1rem;
+    position: relative;
+  }
+  label:after {
+    content: "";
+    position: absolute;
+    top: 0.05rem;
+    left: 0.05rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+}
+
+footer {
+  color: var(--white);
+  ul {
+    padding: 0;
+    li {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      a {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.logo {
+  height: 3rem;
+}
+
+.card {
+  background-color: var(--bg-color);
+}
+.new-price {
+  font-weight: bold;
+  color: var(--red);
+}
+.old-price {
+  text-decoration: line-through;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+.product-item .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 8rem;
+}
+#aside-slide .carousel-indicators {
+  margin-top: 3rem;
+  margin: 0;
+  width: 100%;
+  background-color: var(--primary);
+}
+#aside-slide .carousel-indicators li {
+  border: none;
+  margin: 0.4rem;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "8-Bit Armies",
+    "price": 164000,
+    "newPrice": 74000,
+    "description": "lorem",
+    "new": false,
+    "hot": false,
+    "created_at": 0
+  },
+  {
+    "id": 2,
+    "name": "Assassin's Creed® Unity",
+    "price": 494000,
+    "newPrice": 73000,
+    "description": "lorem",
+    "new": false,
+    "hot": false,
+    "created_at": 0
+  },
+  {
+    "id": 3,
+    "name": "Assassin's Creed® Origins",
+    "price": 988000,
+    "newPrice": 197000,
+    "description": "lorem",
+    "new": false,
+    "hot": false,
+    "created_at": 0
+  },
+  {
+    "id": 4,
+    "name": "PixARK",
+    "price": 309000,
+    "newPrice": 114000,
+    "description": "lorem",
+    "new": false,
+    "hot": false,
+    "created_at": 0
+  }
+]
